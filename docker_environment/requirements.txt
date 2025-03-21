@@ -1,0 +1,11 @@
+scikit-learn==1.6.1
+nltk==3.9.1 
+matplotlib==3.10.0
+beautifulsoup4==4.13.3
+jupyter==1.0.0
+mpld3==0.5.10
+pydot==2.0.0
+gensim==4.3.2
+tensorflow==2.18.0 
+keras==3.5.0 
+pandas==2.2.2
