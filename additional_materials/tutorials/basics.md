@@ -7,6 +7,7 @@
 3. **Repository Management**
 4. **Python Environment Setup**
     - Using Anaconda
+    - Using UV
     - Using venv
     - Google Colab
 
@@ -139,6 +140,36 @@ jupyter lab
 
 7. `python install-models-and-data.py`
    - Runs a custom Python script named `install-models-and-data.py`. This script should contain commands to install additional models or datasets required for your project. Since this step is project-specific, the contents of the script will vary depending on your needs. For example, it might download a pre-trained machine learning model or a specific dataset from the internet.
+
+# Using UV package manager 
+
+## Dowload and install UV
+Follow the official installation guide: https://docs.astral.sh/uv/getting-started/installation/
+
+## Create new virtual env (Linux and Mac)
+
+```bash
+uv venv nlp --python 3.10
+source nlp/bin/activate
+```
+
+## Create new virtual env (Windows)
+```powershell
+uv venv nlp --python 3.10
+nlp\Scripts\activate
+```
+
+## Install dependencies
+```
+# Install dependencies
+uv pip install -r requirements.txt
+
+# Install Jupyter + ipykernel
+uv pip install jupyterlab ipykernel
+
+# Register kernel
+python -m ipykernel install --user --name=digiling_nlp
+```
 
 # Pure Python Installation
 The venv module comes with Python and is used to create isolated Python environments.
